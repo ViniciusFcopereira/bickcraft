@@ -46,6 +46,9 @@ img {
   padding: 16px 0px;
   font-size: 18px;
   position: relative;
+  font-family: "Poppins";
+  font-weight: 400;
+
 }
 
 .header-menu a::after {
@@ -123,6 +126,8 @@ width: 100%;
   margin-bottom: 32px;
   font-size: 64px;
   line-height: 1.125;
+  font-family: "Poppins";
+  font-weight: 600;
 }
 
 .introdução h1 span {
@@ -134,6 +139,8 @@ width: 100%;
   font-size: 24px;
   line-height: 1.5;
   color: #b2b2b2;
+  font-family: "Roboto";
+  font-weight: 400;
 }
 
 .introdução a {
@@ -146,7 +153,8 @@ width: 100%;
   color: #332200;
   font-size: 18px;
   line-height: 1.33;
-  font-weight: bold;
+  font-family: "Poppins";
+  font-weight: 600;
 }
 
 .introdução a:hover {
@@ -154,5 +162,36 @@ width: 100%;
 }
 
 @media ( max-width: 1200px) {
+  .introdução h1 {
+    font-size: 48px;
+  }
   
 }
+@media ( max-width: 800px) {
+  .introdução-bg{
+    background: #111111;
+    padding-top: 40px;
+    box-shadow: inset 0 -60px #ffffff;
+  }
+  .introdução {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .introdução-conteudo {
+    padding-bottom: 0px;
+  }
+  .introdução h1 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  }
+ .introdução img {
+  height:300px ;
+  width: 100%;
+ }
+}
+ @media ( max-width: 600px) {
+  .introdução a {
+    padding: 12px 16px;
+    font-size: 16px;
+  }
+ }
